@@ -9,7 +9,7 @@ public class GenericsChallenge2 {
         Archer archer = new Archer();
 
         archer.attack("->");
-        archer.attack(Double.valueOf(1.0));
+        archer.attack(1.0);
         archer.attack(Float.valueOf(1));
     }
 

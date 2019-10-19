@@ -4,10 +4,9 @@ import java.io.Closeable;
 
 public class ExceptionChallenge2 {
     public static void main(String... doYourBest) {
-        String soprano = null;
+        String soprano = "";
 
         CloseIt closeIt = new CloseIt();
-
         try(closeIt) {
             System.out.println(soprano.matches(null));
         } catch (RuntimeException r) {

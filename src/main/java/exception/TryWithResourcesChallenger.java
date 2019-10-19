@@ -9,17 +9,17 @@ import java.io.IOException;
  * C - >>#?#2
  * D - >#? then IOException will be thrown
  */
-public class ExceptionChallenge {
+public class TryWithResourcesChallenger {
 
     static String marvelHero = "";
 
     public static void main(String... marvel) throws Exception {
         Logan logan = new Logan();
-        new ExceptionChallenge().executeAction(new PeterParker(), logan);
+        executeAction(new PeterParker(), logan);
         System.out.println(marvelHero + logan.wolverineCloseCount);
     }
 
-    private void executeAction(Closeable spiderMan, AutoCloseable wolverine) throws Exception {
+    private static void executeAction(Closeable spiderMan, AutoCloseable wolverine) throws Exception {
         try (spiderMan; wolverine) {
             wolverine.close();
         } catch (Exception ignore) {
@@ -41,8 +41,10 @@ public class ExceptionChallenge {
             marvelHero += ">";
             wolverineCloseCount++;
 
-            if (wolverineCloseCount >= 1) {
+            if (wolverineCloseCount == 1) {
                 throw new IOException();
+            } else {
+                throw new RuntimeException();
             }
         }
     }

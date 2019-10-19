@@ -16,7 +16,7 @@ public class Java12SwitchCaseChallenge {
             case MONDAY -> (T) Integer.valueOf(4);
             case TUESDAY, WEDNESDAY, THURSDAY -> {
                 System.out.println("Every day is beer day for Homer");
-                break (T) (Object) (Integer.valueOf(129) == 129 ? 5 : 7);
+                yield (Integer.valueOf(129) == 129 ? 5 : 7);
             }
             case FRIDAY -> (T) Double.valueOf(4);
             case SATURDAY, SUNDAY -> (T) "6" == new String("6") ? 2 : 4;
