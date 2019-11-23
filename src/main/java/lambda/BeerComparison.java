@@ -8,7 +8,7 @@ public class BeerComparison {
     public static void main(String... doYourBest) {
         Function<Integer, Predicate<Integer>> isGreaterThan = pivot -> number -> number > pivot;
 
-        Supplier<Integer> moeSupplier = () -> { return 5; };
+        Supplier<Integer> moeSupplier = () -> 5;
         Consumer<Object> homerConsumer = System.out::println;
 
         UnaryOperator<Integer> carlOperator = (c) -> Integer.valueOf(c);
@@ -20,5 +20,6 @@ public class BeerComparison {
         System.out.println(beersSum);
         homerConsumer.accept(isGreaterThan.apply(moeSupplier.get()).test(beersSum));
     }
-
+    // Rodrigo - 5 9 true
+    // Farhad Dorival - 5 9 false
 }

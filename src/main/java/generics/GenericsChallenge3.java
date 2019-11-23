@@ -24,7 +24,7 @@ public class GenericsChallenge3 {
         return list;
     }
 
-    public static <T> List<T> get(T type1, T type2) {
+    public static <T, R extends T> List<T> get(T type1, R type2) {
         List<T> list = new ArrayList<>();
         list.add(type1);
         list.add(type2);
