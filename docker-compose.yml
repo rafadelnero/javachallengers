@@ -1,0 +1,23 @@
+version: "3"
+services:
+  javac:
+    image: openjdk:13-slim
+    volumes:
+      - .:/app
+    entrypoint: javac --enable-preview --release 13
+    working_dir: /app/src/main/java
+    network_mode: bridge
+  java:
+    image: openjdk:13-slim
+    volumes:
+      - .:/app
+    entrypoint: java --enable-preview
+    working_dir: /app/src/main/java
+    network_mode: bridge
+  java-source:
+    image: openjdk:13-slim
+    volumes:
+      - .:/app
+    entrypoint: java --enable-preview --source 13
+    working_dir: /app/src/main/java
+    network_mode: bridge

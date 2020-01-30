@@ -27,5 +27,3 @@ public class PutMapChallenge {
 	}
 
 }
-
-// Farhad - 6

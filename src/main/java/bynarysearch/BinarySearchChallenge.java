@@ -18,5 +18,3 @@ public class BinarySearchChallenge {
 
 }
 
-// Rinaldo Farhad -1 Carnage -1 -1 2
-

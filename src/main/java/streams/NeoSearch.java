@@ -21,6 +21,3 @@ public class NeoSearch {
     }
 
 }
-
-// Farhad - Agent Smith is looking for Neo...
-//          Agent Smith is looking for Neo...

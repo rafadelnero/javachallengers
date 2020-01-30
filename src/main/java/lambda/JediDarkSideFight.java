@@ -14,8 +14,6 @@ public class JediDarkSideFight {
         BiFunction<UnaryOperator<String>, UnaryOperator<String>, Function<String, String>>
                 attackDarkSide = Function::andThen;
 
-        System.out.println(fightDarkSide.apply(fightEmpire.apply(yoda.get())));
-
         String finalAttack = attackDarkSide.apply(fightEmpire, fightDarkSide).apply(yoda.get());
 
         Consumer<String> consumeForce = System.out::println;

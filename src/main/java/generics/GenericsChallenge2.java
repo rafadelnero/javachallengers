@@ -1,7 +1,5 @@
 package generics;
 
-
-
 @SuppressWarnings(value = "all")
 public class GenericsChallenge2 {
 
