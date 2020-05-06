@@ -1,7 +1,6 @@
 package lambda;
 
 import java.util.function.*;
-import java.util.stream.Stream;
 
 public class BeerComparison {
 
@@ -20,6 +19,4 @@ public class BeerComparison {
         System.out.println(beersSum);
         homerConsumer.accept(isGreaterThan.apply(moeSupplier.get()).test(beersSum));
     }
-    // Rodrigo - 5 9 true
-    // Farhad Dorival - 5 9 false
 }
