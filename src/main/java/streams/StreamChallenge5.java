@@ -25,9 +25,9 @@ public class StreamChallenge5 {
         }
 
         String getName() { return name; }
-        int getAge() { return age; }
+        int getAge() {
+            return age; }
     }
 }
 
-// Rodrigo - 20 30
 
