@@ -29,8 +29,8 @@ public class CompletableFutureChallenge {
         });
 
     System.out.print("time to go home :( ");
-  } // Farhad Dorival - Rating: 14 time to go home :(
-    // Rodrigo - Rating: 8 time to go home :(
+  }
+
 }
 
 

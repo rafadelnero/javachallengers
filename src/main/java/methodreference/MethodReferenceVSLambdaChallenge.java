@@ -1,6 +1,6 @@
 package methodreference;
 
-public class MethodReferenceChallenger {
+public class MethodReferenceVSLambdaChallenge {
 
     public static void main(String... doYourBest) {
         Runnable universeImpactRunnable = () -> new ChuckNorris().roundHouseKick();
@@ -30,4 +30,3 @@ public class MethodReferenceChallenger {
 
 }
 
-// Rodrigo - The galaxy is finished = 0100

@@ -8,7 +8,7 @@ import java.util.function.Function;
  * C - It won't compile
  * D - SLukeFSYoda
  */
-public class InterfaceChallenger {
+public class JediLambdaJoinChallenge {
 
     interface Jedi {
         String MASTER = "Yoda";
@@ -38,8 +38,6 @@ public class InterfaceChallenger {
                 return "X";
             }
         }.attack() + Jedi.useSaber() + Jedi.MASTER);
-
-        System.out.println(Thread.currentThread().getName());
     }
 
 }

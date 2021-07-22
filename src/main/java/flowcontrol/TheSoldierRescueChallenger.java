@@ -1,5 +1,7 @@
 package flowcontrol;
 
+import java.util.Optional;
+
 /**
  * - Difference between keyword and reserved word
  * - A variable can be declared with a reserved word
@@ -14,6 +16,9 @@ public class TheSoldierRescueChallenger {
         yield.append(rescueMeryl("SolidSnake"));
         yield.append(rescueMeryl("LiquidSnakeX"));
         System.out.println(yield);
+
+        Optional<String> optJavaMascot = Optional.ofNullable("value");
+        optJavaMascot.ifPresentOrElse(System.out::println, () -> System.out.println("No value"));
     }
     static Object rescueSokolov(String eliteSoldier){
         return switch (eliteSoldier){
@@ -29,7 +34,7 @@ public class TheSoldierRescueChallenger {
             case "LiquidSnake" ->  {
                 yield (T) "L";
             }
-            //case "MetalGear" -> (T) "?";
+//           case "MetalGear": yield (T) "?";
             default -> (T) "D";
         };
     }
