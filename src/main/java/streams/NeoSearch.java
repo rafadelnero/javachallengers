@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 public class NeoSearch {
 
     public static void main(String... doYourBest) {
-        List<String> ls = List.of("Neo", "Neo", "Morpheus", "Neo", "Neo");
+        List<String> ls = List.of("Neo", "Morpheus", "Oracle", "Trinity", "Neo");
 
         Predicate<String> neoSearch = str -> {
             System.out.println("Agent Smith is looking for Neo...");
