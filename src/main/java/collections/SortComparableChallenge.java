@@ -3,7 +3,7 @@ package collections;
 import java.util.*;
 
 public class SortComparableChallenge {
-    public static void main(String... doYourBest) {
+   public static void main(String... doYourBest) {
         Set<Simpson> set = new TreeSet<>();
         set.add(new Simpson("Homer"));
         set.add(new Simpson("Marge"));
@@ -11,8 +11,7 @@ public class SortComparableChallenge {
         set.add(new Simpson("Bart"));
         set.add(new Simpson("Maggie"));
 
-        List<Simpson> list = new ArrayList<>();
-        list.addAll(set);
+        List<Simpson> list = new ArrayList<>(set);
         Collections.reverse(list);
         list.forEach(System.out::println);
     }

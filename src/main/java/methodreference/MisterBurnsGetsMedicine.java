@@ -1,15 +1,12 @@
 package methodreference;
 
-import java.util.List;
-
 public class MisterBurnsGetsMedicine {
 
     public static void main(String... doYourBest) {
         MedicineSupplier medicine = Smithers::new;
-        short shortTest = 1;
-        medicine.provideMedicine(shortTest);
+        medicine.provideMedicine(Integer.valueOf(3));
         medicine.provideMedicine(10);
-        medicine.provideMedicine(shortTest);
+        medicine.provideMedicine(1);
     }
 
     static class Smithers {

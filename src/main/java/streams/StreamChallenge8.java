@@ -11,7 +11,7 @@ public class StreamChallenge8 {
                 .dropWhile(i -> i < 6)
                 .sorted()
                 .takeWhile(i -> i > 2)
-                .forEach(System.out::println);
+                .forEach(System.out::print);
     }
 
 }

@@ -9,7 +9,7 @@ public class MatchTheLambdaChallenger {
         Supplier<String> methodReferenceMoeBeerSupplier = String::new;
 
         Predicate<String> beerQualityTest = (jedi) -> jedi.equals("jedi");
-        Predicate<String> methodReferenceBeerQualityTest = String::isEmpty;
+        Predicate<String> methodReferenceBeerQualityTest = "anyString"::contains;
 
         Consumer<String> beerConsumer = (saber) -> System.out.println("Moe uses the " + saber);
         Consumer<Integer> methodReferenceConsumer = System.out::println;
