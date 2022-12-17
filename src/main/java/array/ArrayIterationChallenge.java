@@ -1,9 +1,7 @@
 package array;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.stream.Collectors;
 
 public class ArrayIterationChallenge {
 	public static void main(String... doYourBest) {

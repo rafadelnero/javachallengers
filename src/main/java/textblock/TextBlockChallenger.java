@@ -32,5 +32,4 @@ public class TextBlockChallenger {
     }
 
 }
-// Sebastien Farhad - true false
 
